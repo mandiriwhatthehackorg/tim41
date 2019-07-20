@@ -25,7 +25,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         limitView.layer.borderColor = UIColor.gray.cgColor
         limitView.layer.borderWidth = 2
-        limitView.layer.masksToBounds = falseç
+        limitView.layer.masksToBounds = false
         limitView.layer.cornerRadius = limitView.frame.height / 4
         
         collectionView.delegate = self
