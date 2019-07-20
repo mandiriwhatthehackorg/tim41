@@ -12,6 +12,7 @@
 		1B3A3FCD22E2EB4700E7EB36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3A3FCB22E2EB4700E7EB36 /* Main.storyboard */; };
 		1B3A3FCF22E2EB4800E7EB36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3A3FCE22E2EB4800E7EB36 /* Assets.xcassets */; };
 		1B3A3FD222E2EB4800E7EB36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3A3FD022E2EB4800E7EB36 /* LaunchScreen.storyboard */; };
+		1B3A3FDA22E2F59A00E7EB36 /* PaymentServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3FD922E2F59A00E7EB36 /* PaymentServiceCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1B3A3FCE22E2EB4800E7EB36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B3A3FD122E2EB4800E7EB36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B3A3FD322E2EB4800E7EB36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B3A3FD922E2F59A00E7EB36 /* PaymentServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentServiceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				1B3A3FC722E2EB4700E7EB36 /* AppDelegate.swift */,
 				1B3A3FC922E2EB4700E7EB36 /* ViewController.swift */,
+				1B3A3FD922E2F59A00E7EB36 /* PaymentServiceCell.swift */,
 				1B3A3FCB22E2EB4700E7EB36 /* Main.storyboard */,
 				1B3A3FCE22E2EB4800E7EB36 /* Assets.xcassets */,
 				1B3A3FD022E2EB4800E7EB36 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B3A3FCA22E2EB4700E7EB36 /* ViewController.swift in Sources */,
+				1B3A3FDA22E2F59A00E7EB36 /* PaymentServiceCell.swift in Sources */,
 				1B3A3FC822E2EB4700E7EB36 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
