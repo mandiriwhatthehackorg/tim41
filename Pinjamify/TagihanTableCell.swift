@@ -12,4 +12,8 @@ class TagihanTableCell : UITableViewCell {
     @IBOutlet weak var tanggalBox: UIView!
     @IBOutlet weak var descBox: UIView!
     
+    @IBOutlet weak var tanggal: UILabel!
+    @IBOutlet weak var bulan: UILabel!
+    @IBOutlet weak var jumlah: UILabel!
+    @IBOutlet weak var status: UILabel!
 }

@@ -39,15 +39,15 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         collectionView.layer.cornerRadius = collectionView.frame.height / 5
         
         collectionViewContainer.layer.backgroundColor = UIColor.white.cgColor
-        collectionViewContainer.layer.shadowPath =
-            UIBezierPath(roundedRect: collectionView.bounds,
-                         cornerRadius: collectionView.layer.cornerRadius).cgPath
-        collectionViewContainer.layer.shadowColor = UIColor.black.cgColor
-        collectionViewContainer.layer.shadowOpacity = 0.5
-        collectionViewContainer.layer.shadowOffset = CGSize(width: 1, height: 1)
-        collectionViewContainer.layer.shadowRadius = collectionView.frame.height / 5
-        collectionViewContainer.layer.masksToBounds = false
-        collectionViewContainer.layer.cornerRadius = collectionView.frame.height / 5
+//        collectionViewContainer.layer.shadowPath =
+//            UIBezierPath(roundedRect: collectionView.bounds,
+//                         cornerRadius: collectionView.layer.cornerRadius).cgPath
+//        collectionViewContainer.layer.shadowColor = UIColor.black.cgColor
+//        collectionViewContainer.layer.shadowOpacity = 0.5
+//        collectionViewContainer.layer.shadowOffset = CGSize(width: 1, height: 1)
+//        collectionViewContainer.layer.shadowRadius = collectionView.frame.height / 5
+//        collectionViewContainer.layer.masksToBounds = false
+//        collectionViewContainer.layer.cornerRadius = collectionView.frame.height / 5
         
         carouselView.dataSource = self
         carouselView.delegate = self
@@ -58,7 +58,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 
     //MARK: - Payment Service Collection View Protocol
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 8
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -67,27 +67,34 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! PaymentServiceCell
-        cell.image.image = UIImage(named: "payment-item-spotify")
-        cell.image.layer.cornerRadius = cell.image.frame.height / 2
+        let imageName = "payment-item-" + String(indexPath.item)
+        cell.image.image = UIImage(named: imageName)
+        cell.imageContainer.layer.cornerRadius = cell.image.frame.height / 2
         cell.image.layer.masksToBounds = false
         cell.image.clipsToBounds = true
-        cell.image.layer.borderWidth = 1
-        cell.image.layer.borderColor = UIColor.gray.cgColor
+        cell.imageContainer.layer.borderWidth = 1
+        cell.imageContainer.layer.borderColor = UIColor.orange.cgColor
+    
+        cell.title.text = "PDAM"
+        
         return cell
     }
     
     
+     var adsData = ["ads-banner-1", "ads-banner-2"]
     //MARK: - FSPager protocol
     public func numberOfItems(in pagerView: FSPagerView) -> Int {
-        return 10
+        return adsData.count
     }
     
+    
+   
     public func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
         let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "cell", at: index)
         //FIXME: Add image
-        cell.imageView?.image = UIImage(named: "ProfilePic")
+        cell.imageView?.image = UIImage(named: adsData[index])
         cell.layer.cornerRadius = cell.frame.height / 8
-        cell.layer.borderWidth = 2
+        cell.layer.borderWidth = 1
         cell.layer.borderColor = UIColor.gray.cgColor
         cell.clipsToBounds = true
         return cell

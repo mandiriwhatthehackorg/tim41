@@ -8,6 +8,13 @@
 
 import UIKit
 
+struct Transaction {
+    var date : String
+    var month : String
+    var amount : String
+    var status : String
+}
+
 class CicilViewController : UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
@@ -38,7 +45,7 @@ class CicilViewController : UIViewController, UITableViewDataSource, UITableView
         tableView.separatorColor = UIColor.clear
     }
     
-    var data = ["mandiri what ?? 1", "mandiri what ??", "mandiri what ?? 2", "mandiri what ??", "mandiri what ?? 3", "mandiri what ??", "mandiri what ?? 4"]
+    var data = [Transaction(date: "12", month: "Apr", amount: "RP 3.000.000", status: "Lunas"), Transaction(date: "17", month: "Apr", amount: "RP 3.000.000", status: "Lunas"), Transaction(date: "21", month: "Mei", amount: "RP 3.000.000", status: "Lunas")]
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -52,6 +59,10 @@ class CicilViewController : UIViewController, UITableViewDataSource, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "tvcell", for: indexPath) as! TagihanTableCell
         cell.tanggalBox.layer.cornerRadius = cell.tanggalBox.frame.height / 2
         cell.descBox.layer.cornerRadius = cell.descBox.frame.height / 2
+        cell.tanggal.text = data[indexPath.item].date
+        cell.bulan.text = data[indexPath.item].month
+        cell.jumlah.text = data[indexPath.item].amount
+        cell.status.text = data[indexPath.item].status
         
         return cell
     }

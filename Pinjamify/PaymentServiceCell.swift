@@ -9,5 +9,7 @@
 import UIKit
 
 class PaymentServiceCell : UICollectionViewCell {
+    @IBOutlet weak var imageContainer: UIView!
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var title: UILabel!
 }

@@ -15,6 +15,7 @@
 		1B3A3FDA22E2F59A00E7EB36 /* PaymentServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3FD922E2F59A00E7EB36 /* PaymentServiceCell.swift */; };
 		1B3A3FE022E31DEB00E7EB36 /* CicilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3FDF22E31DEB00E7EB36 /* CicilViewController.swift */; };
 		1B3A3FE222E3299C00E7EB36 /* TagihanTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3FE122E3299C00E7EB36 /* TagihanTableCell.swift */; };
+		1B3A3FE422E36C2900E7EB36 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3FE322E36C2900E7EB36 /* ProfileViewController.swift */; };
 		8277ACB673433CD8358957F0 /* Pods_Pinjamify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B2F24449BDD96FE4AF097A /* Pods_Pinjamify.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		1B3A3FD922E2F59A00E7EB36 /* PaymentServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentServiceCell.swift; sourceTree = "<group>"; };
 		1B3A3FDF22E31DEB00E7EB36 /* CicilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CicilViewController.swift; sourceTree = "<group>"; };
 		1B3A3FE122E3299C00E7EB36 /* TagihanTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagihanTableCell.swift; sourceTree = "<group>"; };
+		1B3A3FE322E36C2900E7EB36 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		243A93440CB764CC6EDC9A20 /* Pods-Pinjamify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pinjamify.debug.xcconfig"; path = "Target Support Files/Pods-Pinjamify/Pods-Pinjamify.debug.xcconfig"; sourceTree = "<group>"; };
 		278A698576903D00A3FB0A74 /* Pods-Pinjamify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pinjamify.release.xcconfig"; path = "Target Support Files/Pods-Pinjamify/Pods-Pinjamify.release.xcconfig"; sourceTree = "<group>"; };
 		76B2F24449BDD96FE4AF097A /* Pods_Pinjamify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pinjamify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +75,7 @@
 				1B3A3FD922E2F59A00E7EB36 /* PaymentServiceCell.swift */,
 				1B3A3FE122E3299C00E7EB36 /* TagihanTableCell.swift */,
 				1B3A3FCB22E2EB4700E7EB36 /* Main.storyboard */,
+				1B3A3FE322E36C2900E7EB36 /* ProfileViewController.swift */,
 				1B3A3FCE22E2EB4800E7EB36 /* Assets.xcassets */,
 				1B3A3FD022E2EB4800E7EB36 /* LaunchScreen.storyboard */,
 				1B3A3FD322E2EB4800E7EB36 /* Info.plist */,
@@ -217,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B3A3FE422E36C2900E7EB36 /* ProfileViewController.swift in Sources */,
 				1B3A3FCA22E2EB4700E7EB36 /* ViewController.swift in Sources */,
 				1B3A3FE222E3299C00E7EB36 /* TagihanTableCell.swift in Sources */,
 				1B3A3FDA22E2F59A00E7EB36 /* PaymentServiceCell.swift in Sources */,
