@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import FSPagerView
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, FSPagerViewDelegate, FSPagerViewDataSource {
     @IBOutlet weak var profilePic: UIImageView!
     @IBOutlet weak var limitView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionViewContainer: UIView!
+    @IBOutlet weak var carouselView: FSPagerView! {
+        didSet {
+            self.carouselView.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "cell")
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,8 +49,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         collectionViewContainer.layer.masksToBounds = false
         collectionViewContainer.layer.cornerRadius = collectionView.frame.height / 5
         
+        carouselView.dataSource = self
+        carouselView.delegate = self
+        carouselView.transformer = FSPagerViewTransformer(type: .overlap)
+
+        
     }
 
+    //MARK: - Payment Service Collection View Protocol
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
@@ -60,9 +72,27 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         cell.image.layer.masksToBounds = false
         cell.image.clipsToBounds = true
         cell.image.layer.borderWidth = 1
-        cell.image.layer.borderColor = UIColor.red.cgColor
+        cell.image.layer.borderColor = UIColor.gray.cgColor
         return cell
     }
+    
+    
+    //MARK: - FSPager protocol
+    public func numberOfItems(in pagerView: FSPagerView) -> Int {
+        return 10
+    }
+    
+    public func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
+        let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "cell", at: index)
+        //FIXME: Add image
+        cell.imageView?.image = UIImage(named: "ProfilePic")
+        cell.layer.cornerRadius = cell.frame.height / 8
+        cell.layer.borderWidth = 2
+        cell.layer.borderColor = UIColor.gray.cgColor
+        cell.clipsToBounds = true
+        return cell
+    }
+    
     
 }
 

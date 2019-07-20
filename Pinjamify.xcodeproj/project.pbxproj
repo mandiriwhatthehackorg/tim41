@@ -13,6 +13,9 @@
 		1B3A3FCF22E2EB4800E7EB36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3A3FCE22E2EB4800E7EB36 /* Assets.xcassets */; };
 		1B3A3FD222E2EB4800E7EB36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3A3FD022E2EB4800E7EB36 /* LaunchScreen.storyboard */; };
 		1B3A3FDA22E2F59A00E7EB36 /* PaymentServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3FD922E2F59A00E7EB36 /* PaymentServiceCell.swift */; };
+		1B3A3FE022E31DEB00E7EB36 /* CicilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3FDF22E31DEB00E7EB36 /* CicilViewController.swift */; };
+		1B3A3FE222E3299C00E7EB36 /* TagihanTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3FE122E3299C00E7EB36 /* TagihanTableCell.swift */; };
+		8277ACB673433CD8358957F0 /* Pods_Pinjamify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B2F24449BDD96FE4AF097A /* Pods_Pinjamify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		1B3A3FD122E2EB4800E7EB36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B3A3FD322E2EB4800E7EB36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B3A3FD922E2F59A00E7EB36 /* PaymentServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentServiceCell.swift; sourceTree = "<group>"; };
+		1B3A3FDF22E31DEB00E7EB36 /* CicilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CicilViewController.swift; sourceTree = "<group>"; };
+		1B3A3FE122E3299C00E7EB36 /* TagihanTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagihanTableCell.swift; sourceTree = "<group>"; };
+		243A93440CB764CC6EDC9A20 /* Pods-Pinjamify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pinjamify.debug.xcconfig"; path = "Target Support Files/Pods-Pinjamify/Pods-Pinjamify.debug.xcconfig"; sourceTree = "<group>"; };
+		278A698576903D00A3FB0A74 /* Pods-Pinjamify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pinjamify.release.xcconfig"; path = "Target Support Files/Pods-Pinjamify/Pods-Pinjamify.release.xcconfig"; sourceTree = "<group>"; };
+		76B2F24449BDD96FE4AF097A /* Pods_Pinjamify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pinjamify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8277ACB673433CD8358957F0 /* Pods_Pinjamify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				1B3A3FC622E2EB4700E7EB36 /* Pinjamify */,
 				1B3A3FC522E2EB4700E7EB36 /* Products */,
+				88590D8F45E23898DCB477A2 /* Pods */,
+				D9E57252EF707A5FAC51D62C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +69,32 @@
 			children = (
 				1B3A3FC722E2EB4700E7EB36 /* AppDelegate.swift */,
 				1B3A3FC922E2EB4700E7EB36 /* ViewController.swift */,
+				1B3A3FDF22E31DEB00E7EB36 /* CicilViewController.swift */,
 				1B3A3FD922E2F59A00E7EB36 /* PaymentServiceCell.swift */,
+				1B3A3FE122E3299C00E7EB36 /* TagihanTableCell.swift */,
 				1B3A3FCB22E2EB4700E7EB36 /* Main.storyboard */,
 				1B3A3FCE22E2EB4800E7EB36 /* Assets.xcassets */,
 				1B3A3FD022E2EB4800E7EB36 /* LaunchScreen.storyboard */,
 				1B3A3FD322E2EB4800E7EB36 /* Info.plist */,
 			);
 			path = Pinjamify;
+			sourceTree = "<group>";
+		};
+		88590D8F45E23898DCB477A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				243A93440CB764CC6EDC9A20 /* Pods-Pinjamify.debug.xcconfig */,
+				278A698576903D00A3FB0A74 /* Pods-Pinjamify.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D9E57252EF707A5FAC51D62C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76B2F24449BDD96FE4AF097A /* Pods_Pinjamify.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B3A3FD622E2EB4800E7EB36 /* Build configuration list for PBXNativeTarget "Pinjamify" */;
 			buildPhases = (
+				BA44DAFD659B94E6C13C5B03 /* [CP] Check Pods Manifest.lock */,
 				1B3A3FC022E2EB4700E7EB36 /* Sources */,
 				1B3A3FC122E2EB4700E7EB36 /* Frameworks */,
 				1B3A3FC222E2EB4700E7EB36 /* Resources */,
+				8B097F67A01E2A12AB1DD850 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +165,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8B097F67A01E2A12AB1DD850 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pinjamify/Pods-Pinjamify-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pinjamify/Pods-Pinjamify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA44DAFD659B94E6C13C5B03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pinjamify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1B3A3FC022E2EB4700E7EB36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1B3A3FCA22E2EB4700E7EB36 /* ViewController.swift in Sources */,
+				1B3A3FE222E3299C00E7EB36 /* TagihanTableCell.swift in Sources */,
 				1B3A3FDA22E2F59A00E7EB36 /* PaymentServiceCell.swift in Sources */,
 				1B3A3FC822E2EB4700E7EB36 /* AppDelegate.swift in Sources */,
+				1B3A3FE022E31DEB00E7EB36 /* CicilViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +365,7 @@
 		};
 		1B3A3FD722E2EB4800E7EB36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 243A93440CB764CC6EDC9A20 /* Pods-Pinjamify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +383,7 @@
 		};
 		1B3A3FD822E2EB4800E7EB36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 278A698576903D00A3FB0A74 /* Pods-Pinjamify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
