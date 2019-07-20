@@ -30,9 +30,13 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         profilePic.clipsToBounds = true
         
         limitView.layer.borderColor = UIColor.gray.cgColor
-        limitView.layer.borderWidth = 2
+        limitView.layer.borderWidth = 0
         limitView.layer.masksToBounds = false
         limitView.layer.cornerRadius = limitView.frame.height / 4
+        limitView.layer.shadowPath = UIBezierPath(roundedRect: limitView.bounds, cornerRadius: limitView.frame.height / 4).cgPath
+        limitView.layer.borderColor = UIColor.black.cgColor
+        limitView.layer.shadowOpacity = 0.4
+        limitView.layer.shadowOffset = CGSize(width: 1, height: 1)
         
         collectionView.delegate = self
         collectionView.dataSource = self

@@ -25,6 +25,7 @@ class ProfileViewController : UIViewController {
         
         for section in sections {
             section.layer.cornerRadius = section.frame.height/2
+            section.layer.backgroundColor = UIColor.lightGray.cgColor
         }
     }
 }
