@@ -31,7 +31,7 @@
             </objects>
             <point key="canvasLocation" x="-966" y="-519"/>
         </scene>
-        <!--Home-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pinjamify" customModuleProvider="target" sceneMemberID="viewController">
@@ -167,7 +167,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="OkC-U7-7gi"/>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="OkC-U7-7gi"/>
                     <connections>
                         <outlet property="carouselView" destination="xg6-tK-Ohl" id="hhN-yg-fmr"/>
                         <outlet property="collectionView" destination="1YS-By-X8j" id="Whp-NO-UcM"/>
@@ -180,7 +180,7 @@
             </objects>
             <point key="canvasLocation" x="-2082.4000000000001" y="320.68965517241384"/>
         </scene>
-        <!--History-->
+        <!--Cicil View Controller-->
         <scene sceneID="I3s-tz-wfk">
             <objects>
                 <viewController id="qdK-mq-bgw" customClass="CicilViewController" customModule="Pinjamify" customModuleProvider="target" sceneMemberID="viewController">
@@ -398,7 +398,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="djy-Q7-Suv"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="History" id="LMx-jq-4ls"/>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="LMx-jq-4ls"/>
                     <connections>
                         <outlet property="firstItemBlue" destination="0qz-hB-wEt" id="zhN-fi-vFX"/>
                         <outlet property="firstItemWhite" destination="90X-HO-s0K" id="aXP-KU-TBa"/>
@@ -411,7 +411,7 @@
             </objects>
             <point key="canvasLocation" x="-1378.4000000000001" y="320.68965517241384"/>
         </scene>
-        <!--Profil-->
+        <!--Profile View Controller-->
         <scene sceneID="T8Y-jI-Auz">
             <objects>
                 <viewController id="9fD-VX-FOg" customClass="ProfileViewController" customModule="Pinjamify" customModuleProvider="target" sceneMemberID="viewController">
@@ -553,7 +553,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Pjb-AL-6L2"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profil" id="x9l-Qz-MOV"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="x9l-Qz-MOV"/>
                     <connections>
                         <outlet property="pointView" destination="bJD-zX-msd" id="CiQ-WE-GYz"/>
                         <outlet property="topBackground" destination="EkQ-gX-Ydr" id="FLS-cN-fCx"/>
@@ -568,7 +568,7 @@
             </objects>
             <point key="canvasLocation" x="-660" y="322.48875562218893"/>
         </scene>
-        <!--Favorit-->
+        <!--View Controller-->
         <scene sceneID="vkf-tP-2h3">
             <objects>
                 <viewController id="Q15-Ch-Lqy" sceneMemberID="viewController">
@@ -578,7 +578,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wbJ-Sh-PHB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Favorit" id="oRg-pn-c0a"/>
+                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="oRg-pn-c0a"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fih-qj-inm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
